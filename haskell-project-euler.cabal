@@ -27,6 +27,7 @@ library
   exposed-modules:
       Lib
       ProblemOne
+      ProblemTwo
   other-modules:
       Paths_haskell_project_euler
   autogen-modules:
