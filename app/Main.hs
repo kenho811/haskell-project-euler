@@ -1,6 +1,6 @@
 module Main (main) where
-
-import Lib
+import ProblemOne ( getSolution )
 
 main :: IO ()
-main = someFunc
+main = do
+    print $ getSolution

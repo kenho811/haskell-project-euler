@@ -26,6 +26,7 @@ source-repository head
 library
   exposed-modules:
       Lib
+      ProblemOne
   other-modules:
       Paths_haskell_project_euler
   autogen-modules:
