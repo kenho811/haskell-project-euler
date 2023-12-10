@@ -25,9 +25,12 @@ source-repository head
 
 library
   exposed-modules:
+      ProblemEight
       ProblemFive
       ProblemFour
       ProblemOne
+      ProblemSeven
+      ProblemSix
       ProblemThree
       ProblemTwo
   other-modules:
