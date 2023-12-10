@@ -18,8 +18,8 @@ primeNumbers fromNum = filter isPrime [fromNum ..]
 
 divideNumAll :: (Integer, [Integer]) -> Integer -> (Integer, [Integer])
 divideNumAll (num, xs) startNum 
-  | num' >= startNum && (length xs' > length xs) =  divideNumAll (num', xs') startNum  -- can divide
-  | num' >= startNum && (length xs' == length xs) =  divideNumAll (num', xs') $ startNum + 1   -- can divide
+  | num' >= startNum && (length xs' > length xs) =  divideNumAll (num', xs') startNum  -- can divide. Keep the same startNum in case it can be divided again next time
+  | num' >= startNum && (length xs' == length xs) =  divideNumAll (num', xs') $ startNum + 1   -- cannot divide. Therefore, increment the startNum 
   | otherwise = (num', xs') -- end algo
   where (num', xs') = divideNumStep (num, xs) startNum
 
