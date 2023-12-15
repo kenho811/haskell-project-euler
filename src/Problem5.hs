@@ -1,4 +1,4 @@
-module ProblemFive where
+module Problem5 where
 
 getSolution :: Integer
 getSolution = head $ filter (\x -> isDivisibleByAll x [1..20]) [20,40..]

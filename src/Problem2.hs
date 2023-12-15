@@ -1,4 +1,4 @@
-module ProblemTwo where
+module Problem2 where
 
 getSolution :: Integer
 getSolution = sum $ fiboSeriesLessThan 4000000

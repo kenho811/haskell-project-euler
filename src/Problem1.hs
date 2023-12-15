@@ -1,4 +1,4 @@
-module ProblemOne (getSolution) where
+module Problem1 (getSolution) where
 
 getSolution :: Integer
 getSolution = getSum [1..999]

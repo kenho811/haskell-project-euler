@@ -1,4 +1,4 @@
-module ProblemEight where
+module Problem8 where
 import Data.Char (digitToInt)
 
 

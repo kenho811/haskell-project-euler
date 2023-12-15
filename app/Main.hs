@@ -1,5 +1,5 @@
 module Main (main) where
-import ProblemOne ( getSolution )
+import Problem1 ( getSolution )
 
 main :: IO ()
 main = do

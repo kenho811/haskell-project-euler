@@ -1,4 +1,4 @@
-module ProblemThree where
+module Problem3 where
 
 
 getSolution :: (Integer, [Integer])

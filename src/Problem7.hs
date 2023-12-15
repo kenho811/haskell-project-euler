@@ -1,4 +1,4 @@
-module ProblemSeven where
+module Problem7 where
 
 
 getSolution :: Integer
