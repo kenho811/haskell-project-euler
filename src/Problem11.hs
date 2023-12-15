@@ -1,14 +1,17 @@
+{-# LANGUAGE QuasiQuotes #-}
+
 module Problem11 where
 
 
-getSolution :: Integer
-getSolution = sum (filter isPrime [1..2000000])
+runProblem11 :: IO()
+runProblem11 = do
+    content <- getInputFromFile
+    print (getNumsFromString content)
 
 
-isPrime :: Integral a => a -> Bool
-isPrime num
-    | num <= 1 = False
-    | otherwise = all (\x -> num `mod` x /= 0 ) [2.. floor ( sqrt (fromIntegral num))]
+getInputFromFile :: IO String
+getInputFromFile = readFile "files/Problem11.txt"
 
 
-
+getNumsFromString :: String -> [[Int]]
+getNumsFromString = map (map read . words) . lines
