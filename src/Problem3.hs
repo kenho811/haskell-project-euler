@@ -2,7 +2,7 @@ module Problem3 where
 
 
 getSolution :: (Integer, [Integer])
-getSolution = divideNumAll (600851475143, []) 1
+getSolution = divideNumAll (600851475143, mSort []) 1
 
 
 isPrime :: (Integral a) => a -> Bool
